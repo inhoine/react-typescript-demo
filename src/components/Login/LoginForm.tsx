@@ -4,7 +4,9 @@ import "./Login.css";
 
 
 function LoginForm({}) {
-    function handleOnChange(e: any) {
+    const handleOnChange = (e: any) => {
+        e.preventDefault();
+        
     }
     return (
         <form onSubmit={LoginForm}> 

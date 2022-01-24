@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
 import ForgotPw from './components/Login/ForgotPw';
 import LoginForm from './components/Login/LoginForm';
+import AppPage from './components/QLHP/AppPage';
+
 
 
 
@@ -10,8 +11,11 @@ function App() {
     <BrowserRouter> 
              <div className="App">
                  <Routes>  
-                    <Route path="/login" element={<LoginForm/>} />
+                    <Route path="/home" element={<AppPage/>} />
+                    <Route path="/" element={<LoginForm/>} />
                     <Route path="/forgot" element={<ForgotPw />} />
+                    <Route path="/" element={<ForgotPw />} />
+
                 </Routes>
             </div>
         </BrowserRouter>

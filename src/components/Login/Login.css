@@ -5,7 +5,7 @@
   }
 
 .login-background {
-    background: url('../ImgLogin/hinh3.png') top center / cover no-repeat;
+    background: url('../Login/ImgLogin/hinh3.png') top center / cover no-repeat;
     height: 100vh;
   }
   .login-container {
@@ -31,7 +31,7 @@
   }
   
   .IPemail {
-    background-image: url('../ImgLogin/Union.png');
+    background-image: url('../Login/ImgLogin/Union.png');
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: 5px;
@@ -42,7 +42,7 @@
   }
   
   .input-second {
-    background-image: url('../ImgLogin/Vector.png');
+    background-image: url('../Login/ImgLogin/Vector.png');
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: 5px;
