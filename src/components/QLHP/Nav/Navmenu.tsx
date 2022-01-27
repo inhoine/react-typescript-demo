@@ -9,11 +9,11 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar-content">
         <img className="navbar-logo" src={logo}  alt="logo"/>
-        <div className="navbar-icons">
-          <img className="navbar-icon" src={money} alt="money" />
-          <img className="navbar-icon" src={basicMoney} alt="basic" />
-          <img className="navbar-icon" src={folder} alt="folder" />
-        </div>
+        <ul className="navbar-icons">
+                <li className="icon-sidebar"> <a href="#"> <img className="icon-sidebar-img"  src={money} alt="money"/></a></li>
+                <li className="icon-sidebar"> <a href="#"> <img className="icon-sidebar-img" src={basicMoney} alt="basicMoney"/> </a> </li>
+                <li className="icon-sidebar"> <a href="#"> <img className="icon-sidebar-img" src={folder} alt="foldder"/> </a> </li>
+        </ul>
       </div>
       <div className="navbar-menu">
         <ul className="navbar-menu-list">
