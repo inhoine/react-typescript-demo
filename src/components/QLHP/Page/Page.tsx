@@ -1,4 +1,3 @@
-import { FaChevronRight } from "react-icons/fa";
 import TableList from "./Table/TableList";
 import Title from "./Title/Title";
 import User from "./User/User";

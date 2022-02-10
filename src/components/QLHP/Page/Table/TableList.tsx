@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import down from "../imguser/down.png";
 import icbutton from "../imguser/icon_button.png";
 import "../Table/TableList.css";
@@ -118,7 +119,7 @@ export default function TableList() {
                     <p className='list-table-item-name'>KT_19A</p>
                     <p className='list-table-item-quantity'>1</p>
                     <p className='list-table-item-update'>01/07/2021</p>
-                    <img src={icbutton} alt="i" className='list-table-item-icon' />
+                    <Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
                 </div>
             </div>
             <div className='list-table-content bg-grey'>

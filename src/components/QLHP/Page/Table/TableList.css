@@ -14,7 +14,7 @@
     margin-right: 30px;
 }
 
-.select-title {
+.table-title {
     line-height: 32px;
     display: block;
     margin-right: 8px;
@@ -221,3 +221,38 @@
     cursor: pointer;
 }
 
+.box-details {
+    position: relative;
+    border: 1px solid #FF7506;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #FFF9F4;;
+    width: 1543px;
+}
+
+
+.table-details-class {
+    /* padding: 0 65px; */
+}
+
+.table-select-details {
+    padding: 0 36px;
+    position: relative;
+    display: flex;
+    height: 58px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.details-class {
+    margin-right: 120px;
+}
+
+.details-class-name {
+    margin-right: 350px;
+}
+
+.details-class-name-gr {
+
+}
