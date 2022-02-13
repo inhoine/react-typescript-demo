@@ -4,6 +4,7 @@
     flex-wrap: nowrap;
 }
 
+
 .table-nav {
     display: flex;
 }
@@ -125,12 +126,7 @@
 }
 
 .list-table-item {
-    padding: 0 36px;
-    position: relative;
-    display: flex;
-    height: 58px;
-    text-align: center;
-    align-items: center;
+0
 }
 
 .list-table-item-id {
@@ -174,7 +170,7 @@
 }
 
 .list-table-content.bg-grey {
-    background-color: #F0F3F6 ;
+    background-color: #F0F3F6;
 }
 
 
@@ -221,38 +217,4 @@
     cursor: pointer;
 }
 
-.box-details {
-    position: relative;
-    border: 1px solid #FF7506;
-    box-sizing: border-box;
-    border-radius: 16px;
-    background-color: #FFF9F4;;
-    width: 1543px;
-}
 
-
-.table-details-class {
-    /* padding: 0 65px; */
-}
-
-.table-select-details {
-    padding: 0 36px;
-    position: relative;
-    display: flex;
-    height: 58px;
-    text-align: center;
-    align-items: center;
-    
-}
-
-.details-class {
-    margin-right: 120px;
-}
-
-.details-class-name {
-    margin-right: 350px;
-}
-
-.details-class-name-gr {
-
-}

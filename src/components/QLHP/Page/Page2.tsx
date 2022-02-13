@@ -1,4 +1,4 @@
-import IDetails from "./Table/IDetails";
+import IDetails from "./Details/IDetails";
 import Details from "./Title/Details";
 import User from "./User/User";
 

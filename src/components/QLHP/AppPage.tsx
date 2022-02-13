@@ -8,8 +8,8 @@ function AppPage() {
   return (
     <div className="app-page">
       <Navbar />
-      <Page />
-      {/* <Page2 /> */}
+      {/* <Page /> */}
+      <Page2 />
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function TableList() {
                             <div className='select-list'>
                                 <ul className='list-item'>
                                     <li className='select-item'>
-                                        <a href="#" className='item-click'>Theo tín chỉ</a>
+                                        <a href="#" className='item-cl00ick'>Theo tín chỉ</a>
                                     </li>
                                     <li className='select-item'>
                                         <a href="#" className='item-click'>Theo tháng</a>
@@ -119,7 +119,7 @@ export default function TableList() {
                     <p className='list-table-item-name'>KT_19A</p>
                     <p className='list-table-item-quantity'>1</p>
                     <p className='list-table-item-update'>01/07/2021</p>
-                    <Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    0<Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
                 </div>
             </div>
             <div className='list-table-content bg-grey'>
