@@ -1,3 +1,4 @@
+import DSHV from "./Details/DSHV";
 import IDetails from "./Details/IDetails";
 import Details from "./Title/Details";
 import User from "./User/User";
@@ -7,7 +8,8 @@ function Page2() {
       <div className="content">
         <User />
         <Details />
-        <IDetails />
+        {/* <IDetails /> */}
+        <DSHV />
       </div>
     );
   }

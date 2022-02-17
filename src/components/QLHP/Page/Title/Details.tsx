@@ -10,7 +10,10 @@ export default function Details() {
         <p className="content-previous">Danh sách lớp học</p>
         <i className="content-icon">{<FaChevronRight />}</i>
         <h1 className="content-present">Chi tiết lớp học</h1>
-      </div>
+        </div>
+        <div className='heading-content-ds'>
+          <h2 className='content-ds'>Danh sách học viên</h2>
+        </div>
     </div>
   );
 }

@@ -119,7 +119,7 @@ export default function TableList() {
                     <p className='list-table-item-name'>KT_19A</p>
                     <p className='list-table-item-quantity'>1</p>
                     <p className='list-table-item-update'>01/07/2021</p>
-                    0<Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
                 </div>
             </div>
             <div className='list-table-content bg-grey'>
@@ -139,7 +139,7 @@ export default function TableList() {
                     <p className='list-table-item-name'>KT_19A</p>
                     <p className='list-table-item-quantity'>1</p>
                     <p className='list-table-item-update'>01/07/2021</p>
-                    <img src={icbutton} alt="i" className='list-table-item-icon' />
+                    <Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
                 </div>
             </div>
             <div className='list-table-content bg-grey'>
@@ -159,7 +159,7 @@ export default function TableList() {
                     <p className='list-table-item-name'>KT_19A</p>
                     <p className='list-table-item-quantity'>1</p>
                     <p className='list-table-item-update'>01/07/2021</p>
-                    <img src={icbutton} alt="i" className='list-table-item-icon' />
+                    <Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
                 </div>
             </div>
             <div className='list-table-content bg-grey'>
@@ -179,7 +179,7 @@ export default function TableList() {
                     <p className='list-table-item-name'>KT_19A</p>
                     <p className='list-table-item-quantity'>1</p>
                     <p className='list-table-item-update'>01/07/2021</p>
-                    <img src={icbutton} alt="i" className='list-table-item-icon' />
+                    <Link className="i-details" to={'/details'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
                 </div>
             </div>
             <div className='list-table-content bg-grey'>

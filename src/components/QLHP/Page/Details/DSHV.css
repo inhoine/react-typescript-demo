@@ -15,66 +15,13 @@
     margin-right: 30px;
 }
 
-.table-title {
-    line-height: 32px;
-    display: block;
-    margin-right: 8px;
-    color: #373839;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.table-heading-select {
-    border: 1px solid rgba(55, 56, 57, 0.7);
-    border-radius: 4px;
-    width: 158px;
-    height: 32px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 10px;
-}
-
-.select-name {
-    line-height: 32px;
-    display: inline-block;
-    padding-left: 8px;
-    color:rgba(55, 56, 57, 0.7) ;
-}
-
-.select-list{
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 4px 10px rgba(133, 178, 220, 0.25);
-    border-radius: 4px;
-    width: 156px;
-    top: 200px;
-    padding-top: 5px;
-    display: none;
-}
-
-.table-heading-select:hover .select-list {
-    display: block;
-}
-
-.list-item {
-        list-style: none;
-        padding-left: 0;       
-}
-
-.select-item {
-    display: block;
-}
-
-.item-click {
-    text-decoration: none;
-    padding-left: 8px;
-    display: block;
-    height: 32px;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(55, 56, 57, 0.6);
+.content-dshv {
+    color: #CC5C00;
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    text-align: left;
 }
 
 .search-input {
@@ -92,21 +39,11 @@
     border: none;
     outline: none;
 }
-
-.search-input::placeholder{
-    color: #c5c5c5;
-    font-size: 14px;
-}
-
-.list-table-content-class {
+.list-table-content-dshv {
     padding: 0 65px;
 }
-.list-table-content {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
 
-.heading-table-content {
+.heading-table-dshv {
     height: 40px;
     border: 1px solid #F2F2F2;
     border-top-left-radius: 8px;
@@ -115,17 +52,22 @@
     padding: 0 36px;
 }
 
-.content-heading-item {
+.content-heading-dshv {
     display: inline-flex;
     line-height: 40px;
-    margin: 0 160px 0 0;
+    margin: 0px 95px 0 0;
     justify-content: flex-start;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
 }
 
-.list-table-item {
+.list-table-dshv.br-grey {
+    background-color: #F0F3F6;
+
+}
+.list-dshv-item {
+    display: flex;
     width: 1510px;
     height: 58px;
     position: relative;
@@ -133,63 +75,100 @@
     justify-content: center;
 }
 
-.list-table-item-id {
+.list-dshv-item-stt {
     position: absolute;
-    left: 50px;
+    left: 47px;
     display: block;
 }
-
-.list-table-item-code {
+.list-dshv-item-name {
     position: absolute;
-    left: 215px;
+    left: 175px;
     display: block;
-    width: 81px;
+    width: 184px;
+}
+.list-dshv-item-mssv {
+    position: absolute;
+    left: 373px;
+    display: block;
+    width: 24px;
 }
 
-.list-table-item-name {
+.list-dshv-item-gt {
     position: absolute;
-    left: 450px;
+    left: 522px;
     display: block;
-    width: 61px;
+    width: 33px;
+}
+.list-dshv-item-ns {
+    position: absolute;
+    left: 673px;
+    display: block;
+    width: 80px;
+}
+.list-dshv-item-sbp {
+    position: absolute;
+    left: 928px;
+    display: block;
+    width: 9px;
+}
+.list-dshv-item-cdmg {
+    position: absolute;
+    left: 1160px;
+    display: block;
+    width: 48px;
 }
 
-.list-table-item-quantity {
+.list-dshv-item-tt {
+    display: flex;
     position: absolute;
-    left: 665px;
-    display: block;
-    width: 150px;
-    text-align: center;
+    left: 1346px;
+    width: 143px;
+    border: 1px solid #0B80EC;
+    height: 37px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
 }
+.list-dshv-item-tt.bd-red {
+    border: 1px solid red;
+    width: 152px;
 
-.list-table-item-update {
-    position: absolute;
-    left: 995px;
 }
 
 .list-table-item-icon {
     position: absolute;
-    left: 1362px;
-    width: 32px;
-    cursor: pointer;
+    right: -32px;
+    display: block;
+    width: 48px;
+    height: 26.666667938232422px;
+    width: 26.666667938232422px;
+    top: 16px;
+    border-radius: 0px;
 }
 
-.list-table-content.bg-grey {
-    background-color: #F0F3F6;
+.total-sv {
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    color: #373839;
+    font-weight: 600;
+    margin-left: 1403px;
+    margin-top: 20px;
 }
-
 
 .footer-nav {
     position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 240px;
-    margin-left: 1281px;
+    margin-top: 192px;
+    margin-left: 1345px;
 }
 
 .footer-nav .footer-nav-page {
     display: flex;
-    margin-right: 64px;
     align-items: center;
 }
 
@@ -220,5 +199,3 @@
     font-size: 18px;
     cursor: pointer;
 }
-
-
