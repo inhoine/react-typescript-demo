@@ -1,0 +1,35 @@
+.table-select-cthv {
+    padding: 0px 70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.title-heading-cthv {
+    padding: 16px 70px 0;
+
+    font-family: Mulish;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.015em;
+
+    color: #CC5C00;
+
+}
+
+.details-cmnd {
+    margin-left: 150px;
+}
+
+.details-lhdt {
+    margin-left: 122px;
+}
+
+.details-khoa {
+    margin-left: 88px;
+
+}
+
+.details-class-cthv {
+    margin-left: 50px;
+}
