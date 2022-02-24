@@ -1,6 +1,6 @@
-import TableList from "./Table/TableList";
-import Title from "./Title/Title";
-import User from "./User/User";
+import TableList from "../Table/TableList";
+import Title from "../Title/Title";
+import User from "../User/User";
 
 function Page() {
   return (

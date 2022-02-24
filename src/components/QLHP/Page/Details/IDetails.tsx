@@ -1,11 +1,18 @@
 
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Details/Details.css";
 import ic_button from "../imguser/icon_button.png";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 
 
 export default function IDetails() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [startDate, setStartDate] = useState<Date | null>(new Date());
+  const [endDate, setEndDate] = useState<Date | null>(new Date());
   return (
   <div className='table'>
       <div className='table-content'>
@@ -33,7 +40,7 @@ export default function IDetails() {
                                 <p className='details-class-name-3 font-size'>2019-2022</p>                     
                             </div> 
                           </div>
-                          <Link className="list_student" to={'/'}> 
+                          <Link className="list_student" to={'/dshv'}> 
                             <button className="btn-list-student">Danh sách học viên</button>
                           </Link>
                           <div className="number-details">
@@ -49,9 +56,9 @@ export default function IDetails() {
                             <div className="list-item-item">
                               <h2 className="name-list-item">Danh sách biểu phí</h2>
                             </div>
-                            <Link className="add-item-details" to={'/'}> 
-                            <button className="btn-add-item">+ Thêm biểu phí</button>
-                          </Link>
+                            <button className="btn-add-item" onClick={() => setIsOpen(true)}>
+                              Thêm biểu phí
+                              </button>
                           </div>
 
                           <div className="table-details-list">
@@ -101,6 +108,127 @@ export default function IDetails() {
               </div>
           </div>
       </div>
+      {isOpen && (
+        <div className="table-add-bp">
+          <div className="table-add-bp-item">
+            <div
+            className="add-bp-item-title">
+              Thêm biểu phí
+            </div>
+            <div className="table-add-item-list">
+                <div className="table-heading-add-item">
+                    <div className="add-item-dt">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="add-item-dt">
+                      <span> STT </span>
+                    </div>
+                    <div className="add-item-dt">
+                      <span> Tên biểu phí </span>
+                    </div>
+                    <div className="add-item-dt-end">
+                      <span>Mã biểu phí </span>
+                    </div>
+                </div>
+                <div className="table-heading-add-item-list">
+                  <div className="list-add-item-product">
+                    <div className="checkbox-add-item">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="stt-add-item">1</div>
+                    <div className="name-add-item">Thu phí ghi danh xếp lớp</div>
+                    <div className="id-add-item">01_GD</div>
+                  </div>
+                </div>    
+                <div className="table-heading-add-item-list bg-grey">
+                  <div className="list-add-item-product">
+                    <div className="checkbox-add-item">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="stt-add-item">2</div>
+                    <div className="name-add-item">Thu phí nhập học</div>
+                    <div className="id-add-item">02_NH</div>
+                  </div>
+                </div>
+                <div className="table-heading-add-item-list">
+                  <div className="list-add-item-product">
+                    <div className="checkbox-add-item">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="stt-add-item">1</div>
+                    <div className="name-add-item">Thu phí ghi danh xếp lớp</div>
+                    <div className="id-add-item">01_GD</div>
+                  </div>
+                </div>    
+                <div className="table-heading-add-item-list bg-grey">
+                  <div className="list-add-item-product">
+                    <div className="checkbox-add-item">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="stt-add-item">2</div>
+                    <div className="name-add-item">Thu phí nhập học</div>
+                    <div className="id-add-item">02_NH</div>
+                  </div>
+                </div><div className="table-heading-add-item-list">
+                  <div className="list-add-item-product">
+                    <div className="checkbox-add-item">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="stt-add-item">1</div>
+                    <div className="name-add-item">Thu phí ghi danh xếp lớp</div>
+                    <div className="id-add-item">01_GD</div>
+                  </div>
+                </div>    
+                <div className="table-heading-add-item-list bg-grey">
+                  <div className="list-add-item-product">
+                    <div className="checkbox-add-item">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="stt-add-item">2</div>
+                    <div className="name-add-item">Thu phí nhập học</div>
+                    <div className="id-add-item">02_NH</div>
+                  </div>
+                </div><div className="table-heading-add-item-list">
+                  <div className="list-add-item-product">
+                    <div className="checkbox-add-item">
+                      <input type="checkbox"/>
+                    </div>
+                    <div className="stt-add-item">1</div>
+                    <div className="name-add-item">Thu phí ghi danh xếp lớp</div>
+                    <div className="id-add-item">01_GD</div>
+                  </div>
+                </div>
+                <div className="ServiceDropdownsSearch">
+                  <div className="ServiceDropdownsItem1">
+                    <div className="ServiceDropdownsSearchFirst">
+                      <div className="ServiceDropdownSearchFirstName">
+                        Ngày bất đầu:
+                      </div>
+                      <div className="ServiceDropdowns_1">
+                        <DatePicker 
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)} 
+                        />
+                      <div className="ServiceDropdownSearchFirstName-2">
+                        Ngày kết thúc:
+                      </div>
+                      <div className="ServiceDropdowns_1">
+                        <DatePicker 
+                          selected={endDate}
+                          onChange={(date) => setEndDate(date)} 
+                        />
+                        </div>
+                      </div>
+                      </div>         
+                    </div>
+                  </div>
+                </div>
+                <button className="btn-cancel-add">Huỷ</button>
+                <button className="btn-save-add">Lưu</button>
+
+              </div>
+          </div>
+      )}
   </div>
   );
 }

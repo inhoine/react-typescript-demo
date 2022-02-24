@@ -25,6 +25,7 @@
 }
 
 .table-heading-select {
+    z-index: 1;
     border: 1px solid rgba(55, 56, 57, 0.7);
     border-radius: 4px;
     width: 158px;
@@ -126,6 +127,7 @@
 }
 
 .list-table-item {
+    display: flex;
     width: 1510px;
     height: 58px;
     position: relative;
@@ -167,7 +169,7 @@
 }
 
 .list-table-item-icon {
-    position: absolute;
+    margin-left: 1220px;
     left: 1362px;
     width: 32px;
     cursor: pointer;

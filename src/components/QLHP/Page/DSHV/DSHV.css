@@ -135,8 +135,8 @@
 
 }
 
-.list-table-item-icon {
-    position: absolute;
+.list-table-item-icon-dshv {
+    margin-left: 1615px;
     right: -32px;
     display: block;
     width: 48px;

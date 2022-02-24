@@ -12,6 +12,7 @@
     line-height: 2.4;
     letter-spacing: 0.015em;
 }
+
 .font-size {
 
 
@@ -139,7 +140,7 @@
     width: 208px;
     height: 52px;
     left: 1616px;
-    top: 486px;
+    top: 500px;
     background: #FF7506;
     border-radius: 8px;
     font-family: Mulish;
@@ -244,6 +245,165 @@
 .tariff-content-item.bg-grey {
     background-color: #F0F3F6;
 } 
+
+.table-add-bp {
+    background-color: rgba(15,14,14,0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.table-add-bp-item {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    background: #E5E5E5;
+    overflow: hidden;
+    animation: showmaldal ease 1s;
+    height: 727px;
+    width: 884px;
+    border-radius: 16px;
+
+}
+.add-bp-item-title {
+
+    font-family: Mulish;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 20px;
+    
+}
+
+.table-add-item-list {
+    margin-left: 62px;
+    width: 85%;
+    height: 40px;
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);;
+
+}
+
+.table-heading-add-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.add-item-dt {
+    display: inline-flex;
+    line-height: 40px;
+    margin: -1px 40px 0px 22px;
+    justify-content: flex-start;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.add-item-dt-end {
+    display: inline-flex;
+    margin-left: 222px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.list-add-item-product {
+    display: flex;
+
+    height: 58px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-add-item {
+    position: absolute;
+    left: 21px;
+    display: block;
+}
+
+
+.stt-add-item {
+    position: absolute;
+    left: 85px;
+    display: block;
+}
+.name-add-item {
+    position: absolute;
+    left: 170px;
+    display: block;
+}
+.id-add-item {
+    position: absolute;
+    left: 540px;
+    display: block;
+}
+
+.table-heading-add-item-list.bg-grey {
+    background-color: #F0F3F6;
+}
+
+.ServiceDropdownsSearch {
+    margin-top: 36px;
+}
+.ServiceDropdownsSearchFirst {
+    display: inline-flex;
+}
+
+.ServiceDropdownSearchFirstName {
+    width: 110px;
+}
+
+.ServiceDropdownSearchFirstName-2 {
+    width: 220px;
+}
+
+.ServiceDropdowns_1 {
+    display: flex;
+
+}
+
+.btn-cancel-add {
+    height: 52px;
+    width: 160px;
+    left: 266px;
+    top: 635px;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.btn-save-add {
+    height: 51.92852783203125px;
+    width: 160px;
+    left: 458px;
+    top: 635px;
+    border-radius: 8px;
+    position: absolute;
+    background: #C9C4C0;
+    color: #FFFFFF;
+    ;
+}
+
+.btn-save-add:hover {
+
+
+    /* Orange/4 */
+
+    background: #FF7506;
+    border-radius: 8px;
+}
 
 
 

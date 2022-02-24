@@ -1,8 +1,7 @@
 import React from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
-import "../Details/DSHV.css";
+import "../DSHV/DSHV.css";
 import icbutton from "../imguser/icon_button.png";
 
 export default function DSHV() {
@@ -39,7 +38,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>2</p>
                     <p className='list-dshv-item-cdmg'>Không</p>
                     <p className='list-dshv-item-tt'>Đã thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/cthv'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>
             <div className='list-table-dshv br-grey'>
@@ -52,7 +51,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>3</p>
                     <p className='list-dshv-item-cdmg'>Có</p>
                     <p className='list-dshv-item-tt'>Đã thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>
             <div className='list-table-dshv'>
@@ -65,7 +64,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>3</p>
                     <p className='list-dshv-item-cdmg'>Không</p>
                     <p className='list-dshv-item-tt bd-red'>Chưa thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>
             <div className='list-table-dshv br-grey'>
@@ -78,7 +77,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>2</p>
                     <p className='list-dshv-item-cdmg'>Không</p>
                     <p className='list-dshv-item-tt'>Đã thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>            <div className='list-table-dshv'>
                 <div className='list-dshv-item'>
@@ -90,7 +89,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>2</p>
                     <p className='list-dshv-item-cdmg'>Không</p>
                     <p className='list-dshv-item-tt'>Đã thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>
             <div className='list-table-dshv br-grey'>
@@ -103,7 +102,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>2</p>
                     <p className='list-dshv-item-cdmg'>Không</p>
                     <p className='list-dshv-item-tt'>Đã thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>            <div className='list-table-dshv'>
                 <div className='list-dshv-item'>
@@ -115,7 +114,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>2</p>
                     <p className='list-dshv-item-cdmg'>Không</p>
                     <p className='list-dshv-item-tt'>Đã thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>
             <div className='list-table-dshv br-grey'>
@@ -128,7 +127,7 @@ export default function DSHV() {
                     <p className='list-dshv-item-sbp'>2</p>
                     <p className='list-dshv-item-cdmg'>Không</p>
                     <p className='list-dshv-item-tt'>Đã thanh toán</p>
-                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon'></img></Link>
+                    <Link className="i-dshv" to={'/'}><img src={icbutton} alt="i" className='list-table-item-icon-dshv'></img></Link>
                 </div>
             </div>
             <div className='total-sv'>Tổng số sinh viên: 40</div>
