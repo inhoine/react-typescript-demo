@@ -223,7 +223,10 @@ export default function IDetails() {
                     </div>
                   </div>
                 </div>
+                <Link to={'/details'}>
                 <button className="btn-cancel-add">Huỷ</button>
+                </Link>
+                
                 <button className="btn-save-add">Lưu</button>
 
               </div>
