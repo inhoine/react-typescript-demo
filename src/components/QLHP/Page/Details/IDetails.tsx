@@ -10,7 +10,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 
 export default function IDetails() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); 
   const [startDate, setStartDate] = useState<Date | null>(new Date());
   const [endDate, setEndDate] = useState<Date | null>(new Date());
   return (
@@ -225,11 +225,10 @@ export default function IDetails() {
                 </div>
                 <Link to={'/details'}>
                 <button className="btn-cancel-add">Huỷ</button>
-                </Link>
-                
+                </Link>             
                 <button className="btn-save-add">Lưu</button>
-
               </div>
+
           </div>
       )}
   </div>
