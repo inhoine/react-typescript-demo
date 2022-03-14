@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import "../Details/Details.css";
 import ic_button from "../imguser/icon_button.png";
 import DatePicker from "react-datepicker";
+import close from "../imguser/close.png";
+
+
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -13,6 +16,8 @@ export default function IDetails() {
   const [isOpen, setIsOpen] = useState(false); 
   const [startDate, setStartDate] = useState<Date | null>(new Date());
   const [endDate, setEndDate] = useState<Date | null>(new Date());
+  const [isOpens, setIsOpens] = useState(false);
+  
   return (
   <div className='table'>
       <div className='table-content'>
@@ -82,10 +87,65 @@ export default function IDetails() {
                                         <p className="content-stop">Ngừng hoạt động</p>
                                       </div>
                                       <div className="link-tariff-detail">
-                                        <Link className="homepg" to={'/detail'}> 
-                                            <a href=""> <img src={ic_button} className="tariff_link"/></a>
+                                        <Link className="homepg" to={'/details'}> 
+                                            <a href=""> <img src={ic_button} className="tariff_link" onClick={() => setIsOpens(true)}/></a>
                                         </Link>
+                                        {isOpens &&  (  
+                                     
+                                     <div className='form-ctbp'>
+                                         <div className='form-ctbp-item'>
+                                         <div className="i-close" ><img src={close} alt="i" className='close-form-hd' onClick={() => setIsOpens(false)}></img>
+                                             </div> 
+                                             <div className='heading-ctbp-content'>Chi tiết biểu phí</div>
+                                             <div className='box-form-ctbp'>
+                                                 <div className='details-box-form'>
+                                                     <p className='item-detail-box'>Thu học phí</p>
+                                                 </div>
+                                                 <div className='details-content-form'>
+                                                     <div className='details-content-items-form'>
+                                                         <p className='details-content-item-item'>Mã biểu phí:</p>    
+                                                         <p className='details-content-item-item'>Niên khoá:</p>    
+                                                     </div>
+                                                     <div className='details-content-items-form'>
+                                                         <p className='details-content-item-mbp'>10_BHYT</p>    
+                                                         <p className='details-content-item-mbp'>2020 - 2023</p>    
+                                                     </div>
+                                                 </div>
+                                                 <div className='form-item-ctbp'>
+                                                     <p className='item-hsgd-ctbp'>1.Hồ sơ ghi danh</p>
+                                                     <p className='item-pgd-ctbp'>2. Phí ghi danh</p>
+                                                 </div>
+                                             </div>
+                                             <div className='day-time-ctbp'>
+                                                 <p className='update-day-ctbp'>Ngày cập nhật:</p>
+                                                 <p className='time-day-ctbp'>02/07/2021</p>    
+                                             </div>
+                                             <div className='list-table-ctbp-content'>
+                                                 <div className='heading-table-ctbp-content'>
+                                                     <p className="content-heading-table-ctbp">Thời gian</p>
+                                                     <p className="content-heading-table-ctbp">Nội dung cập nhật</p>
+                                                     <p className="content-heading-table-ctbp">Trạng thái</p>
+                                                 </div>
+                                                 <div className='list-table-ctbp-ctbp'>
+                                                     <div className='list-table-ctbp-item'>
+                                                         <p className="item-heading-table-time">02/07/2020  08:30 AM</p>
+                                                         <p className="item-heading-table-ndcp">Thay đổi trạng thái</p>
+                                                         <p className="item-heading-table-tt">Đang áp dụng</p>
+                                                     </div>
+                                                 </div>  
+                                                 <div className='list-table-ctbp-ctbp bg-grey'>
+                                                     <div className='list-table-ctbp-item'>
+                                                         <p className="item-heading-table-time">02/07/2020  08:30 AM</p>
+                                                         <p className="item-heading-table-ndcp">Thêm biểu phí</p>
+                                                         <p className="item-heading-table-tt">Chưa áp dụng</p>
+                                                     </div>
+                                                 </div> 
+                                             </div>
+                                         </div>
+                                     </div>
+                                 )}
                                       </div>
+                                      
                                   </div>
                                   <div className="tariff-content-item bg-grey">
                                       <div className="tariff-content-info">
@@ -95,8 +155,8 @@ export default function IDetails() {
                                         <p className="content-stop">Ngừng hoạt động</p>
                                       </div>
                                       <div className="link-tariff-detail">
-                                        <Link className="homepg" to={'/detail'}> 
-                                            <a href=""> <img src={ic_button} className="tariff_link"/></a>
+                                        <Link className="homepg" to={'/details'}> 
+                                            <a href=""> <img src={ic_button} className="tariff_link" onClick={() => setIsOpen(false)}/></a>
                                         </Link>
                                       </div>
                                   </div>
@@ -224,9 +284,9 @@ export default function IDetails() {
                   </div>
                 </div>
                 <Link to={'/details'}>
-                <button className="btn-cancel-add">Huỷ</button>
+                <button className="btn-cancel-add" onClick={() => setIsOpen(false)}>Huỷ</button>
                 </Link>             
-                <button className="btn-save-add">Lưu</button>
+                <button className="btn-save-add" onClick={() => setIsOpen(false)}>Lưu</button>
               </div>
 
           </div>
